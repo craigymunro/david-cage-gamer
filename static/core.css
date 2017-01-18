@@ -1,0 +1,119 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: 'emotion';
+	src: url('/static/font/emotion_engine-webfont.woff2') format('woff2'), url('/static/font/emotion_engine-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'emotion';
+	src: url('/static/font/emotion_engine_bold-webfont.woff2') format('woff2'), url('/static/font/emotion_engine_bold-webfont.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+body {
+	background-color: white;
+	margin: 0;
+	padding: 0;
+	font-family: -system, -apple-system, sans-serif;
+	line-height: 1.5;
+}
+
+.main {
+	width: 100%;
+}
+
+a {
+	color: #003791;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;	
+}
+
+.header,
+.footer {
+	float: left;
+	width: 100%;
+	background-color: #101010;
+	color: white;
+	text-align: center;
+}
+
+.header .title {
+	font-family: 'emotion';
+	font-size: 3.5rem;
+}
+
+.header .title a {
+	color: white;
+}
+
+.header .subtitle {
+	margin: 0;
+	padding: 0;
+}
+
+.main {
+	float: left;
+	width: 100%;
+}
+
+.header > div,
+.main > div,
+.footer > div {
+	max-width: 48rem;
+	margin: 0 auto;	
+	padding: 2rem;
+}
+
+article {
+	float: left;
+	width: 100%;
+	border-bottom: 1px solid #e0e0e0;
+	padding: 0 0 1.25rem;
+	margin: 0 0 1.25rem;
+}
+
+article:last-of-type {
+	border: none;
+}
+
+article .title {
+	font-size: 2rem;
+	font-weight: bold;
+	font-family: 'emotion';
+	margin: 0 0 .5rem;
+	line-height: 1.25;
+}
+
+article .title a {
+
+}
+
+article .subtitle {
+	margin: 0 0 .5rem;
+}
+
+article .date {
+	font-size: .8375rem;
+	color: #909090;
+}
+
+article main {
+	border-top: 1px solid #e0e0e0;
+	margin: 1rem 0;
+	padding: 1rem 0;
+}
+
+article main p {
+	margin: 0 0 1.5rem;
+}

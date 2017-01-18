@@ -1,0 +1,19 @@
+{% extends "core.html" %}
+
+{% block title %}{{ article.title }}{% endblock %}
+
+{% block content %}
+	<article>
+		<h1 class="title">
+			<a href="/{{ article.id }}">{{ article.title }}</a>
+		</h1>
+		<p class="subtitle">
+			{{ article.subtitle }}
+		</p>
+		<p class="date">Posted on {{ article.date|date:"jS F Y" }}
+
+		<main>
+			{{ article.body|linebreaks }}
+		</main>
+	</article>
+{% endblock %}

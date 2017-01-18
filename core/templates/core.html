@@ -1,0 +1,29 @@
+{% load static %}
+<html>
+	<head>
+		<title>{% block title %}The Emotion Engine - A David Cage Blog{% endblock %}</title>
+		<link rel="stylesheet" href="/static/core.css"/>
+	</head>
+	<body>
+		<div class="document">
+			<header class="header">
+				<div>
+					<h1 class="title"><a href="/">The Emotion Engine</a></h1>
+					<p class="subtitle">The David Cage blog. We cover all things David Cage, 24/7.</p>
+				</div>
+			</header>
+
+			<main class="main">
+				<div>
+					{% block content %}{% endblock %}
+				</div>
+			</main>
+
+			<footer class="footer">
+				<div>
+					Copyright, Gamer Network 2017.
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
